@@ -1,0 +1,30 @@
+/* Alinhado com HeroCard */
+.BreackerTitle {
+  font-size: 1.5em;
+  color: #000000;
+  margin: 2% 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  text-align: left;
+}
+
+/* Alinhado com HeroCard */
+/* Alinhado com HeroCard */
+.BreackerLine {
+  width: calc(100vw - 50px);
+  height: 2px;
+  background-color: #414141;
+  margin: 20px 20px;
+}
+
+@media (max-width: 600px) {
+  .BreackerTitle {
+    font-size: 1.1em;
+    margin: 4% 10px 0 10px;
+  }
+  .BreackerLine {
+    width: calc(100vw - 20px);
+    margin: 12px 10px;
+  }
+}

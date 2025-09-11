@@ -1,0 +1,283 @@
+/* ProdutsSegmentboard: espaçamento abaixo do navbar fixo */
+.ProdutsSegmentboard {
+  margin-top: 90px;
+}
+@media (max-width: 700px) {
+  .ProdutsSegment {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 0;
+    gap: 12px;
+  }
+}
+/* ProdutsSegment alinhado com os cards */
+/* ProdutsSegment: grelha de coluna */
+.ProdutsSegment {
+  margin: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: calc(100vw - 40px);
+  max-width: calc(100vw - 50px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+@media (max-width: 1200px) {
+  .HighlightedProductSectionCard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .HighlightedProductSectionCard {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .HighlightedProductSectionCard {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .HeroCard {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 90px 0 20px 0;
+    border-radius: 0;
+    padding: 10px;
+  }
+}
+/* HeroCard: margin-top para ficar abaixo do navbar fixo e margin de 20px em toda a volta */
+/* HeroCard: largura responsiva e margens corretas */
+/* HeroCard: largura responsiva e margens iguais à direita e à esquerda */
+.HeroCard {
+  background-color: #353535;
+  border-radius: 20px;
+  height: 800px;
+  width: calc(100vw - 40px);
+  max-width: calc(100vw - 50px);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 90px 20px 20px 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* ProductSectionCard: grid 2x2 responsivo */
+/* ProductSectionCard: grid 2x2 com margens laterais iguais */
+/* ProductSectionCard alinhada com HeroCard */
+.ProductSectionCard {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: calc(100vw - 40px);
+  max-width: calc(100vw - 50px);
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: auto;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+/* HighlightedProductSectionCard: 4 cartões na horizontal */
+.HighlightedProductSectionCard {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: calc(100vw - 50px);
+  gap: 20px;
+  border-radius: 20px;
+  height: auto;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+@media (max-width: 1200px) {
+  .HighlightedProductSectionCard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .HighlightedProductSectionCard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .ProductSectionCard {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.simpleCardDefaut {
+  background-color: #747474;
+  border-radius: 20px;
+  padding: 20px;
+  height: auto;
+  width: auto;
+  max-width: 100vw;
+  gap: 20px;
+}
+
+.simple-card-image {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.Productcardbutton {
+  background-color: rgb(13, 218, 218);
+  overflow: visible;
+  color: black;
+  align-items: center;
+  margin: 20px;
+  width: 300px;
+}
+
+.areared01 {
+  background: rgb(255, 0, 0);
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #f30000;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.areaproduct01 {
+  background: rgb(68, 0, 255);
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #3300ff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.areared02 {
+  background: rgb(255, 0, 0);
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #747474;
+  border-radius: 20px;
+  padding: 20px;
+  height: 200px;
+  width: auto;
+  max-width: 100vw;
+}
+
+.areaproduct02 {
+  background: rgb(68, 0, 255);
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #3300ff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.areaproduct03 {
+  background: rgb(68, 0, 255);
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #29db4d;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.areaproduct04 {
+  background: rgb(68, 0, 255);
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #29db4d;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.areared03 {
+  background: rgb(255, 0, 0);
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #747474;
+  border-radius: 20px;
+  padding: 20px;
+  height: 200px;
+  width: auto;
+  max-width: 100vw;
+}
+
+.areared04 {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  border-radius: 20px;
+  align-items: left;
+  background-color: #747474;
+  border-radius: 20px;
+  padding: 20px;
+  height: 200px;
+  width: auto;
+  max-width: 100vw;
+}
+
+.simpleboard05 {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+  align-items: left;
+  background-color: #747474;
+  border-radius: 20px;
+  padding: 20px;
+  height: 200px;
+  width: auto;
+  max-width: 100vw;
+}
+
+.simple-card-title {
+  font-size: 1.2em;
+  margin: 10px;
+  color: #000000;
+}
+
+.simple-card-description {
+  font-size: 1em;
+  color: #333333;
+  margin: 10px;
+}
+
+.ProdutsSegment2 {
+  margin: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: calc(100vw - 40px);
+  max-width: calc(100vw - 50px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+}
