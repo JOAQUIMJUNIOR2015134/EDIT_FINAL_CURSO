@@ -6,14 +6,14 @@ function SearchBar() {
   const [products, setProducts] = useState([]);
   const [filtered, setFiltered] = useState([]);
 
-  // useEffect(() => {
-  //   async function fetchProducts() {
-  //     const res = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=100");
-  //     const data = await res.json();
-  //     setProducts(data);
-  //   }
-  //   fetchProducts();
-  // }, []);
+  useEffect(() => {
+    async function fetchProducts() {
+      const res = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=100&search=" + query);
+      const data = await res.json();
+      setProducts(data);
+    }
+    fetchProducts();
+  }, [query]);
 
   useEffect(() => {
     if (query.trim() === "") {

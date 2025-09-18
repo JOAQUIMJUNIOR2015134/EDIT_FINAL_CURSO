@@ -1,8 +1,11 @@
+import ContactUsForm from "../Compoments/ContactForm";
+import "../Styles/Contact.css";
+
 function Contact() {
   return (
-    <>
-    <h1>"Contact Page"</h1>
-    </>
+    <div>
+      <ContactUsForm />
+    </div>
   );
 }
 

@@ -41,17 +41,19 @@ function ProductDet() {
           className="areaproduct02"
           title={product.title}
           description={product.description}
+          hasButton={true}
+          buttontext="Comprar Agora"
         />
         <SimpleCard
           className="areaproduct03"
           image={
-            product.images && product.images.length > 0 ? product.images[0] : ""
+            product.images && product.images.length > 0 ? product.images[1] : ""
           }
         />
         <SimpleCard
           className="areaproduct04"
           image={
-            product.images && product.images.length > 0 ? product.images[0] : ""
+            product.images && product.images.length > 0 ? product.images[2] : ""
           }
         />
       </div>

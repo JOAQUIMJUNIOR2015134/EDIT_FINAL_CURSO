@@ -24,7 +24,7 @@ function ProductsList() {
             <SimpleCard
               className="simpleCardDefaut"
               image={product.images && product.images.length > 0 ? product.images[0] : ""}
-              title={product.title}
+              title={product.title} 
               description={product.description}
             />
           </Link>

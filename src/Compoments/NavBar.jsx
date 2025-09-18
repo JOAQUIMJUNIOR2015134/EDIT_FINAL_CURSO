@@ -20,7 +20,9 @@ function NavBar(){
         <Link to="/contact" className="navbar-link">Contactos</Link>
       </nav>
       <SearchBar></SearchBar>
-      <ShoppingCart count={3}></ShoppingCart>
+      <Link to="/checkout">
+        <ShoppingCart />
+      </Link>
     </div>
     );
 }

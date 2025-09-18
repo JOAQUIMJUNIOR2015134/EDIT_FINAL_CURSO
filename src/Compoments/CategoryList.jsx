@@ -18,11 +18,11 @@ function CategoryList() {
     }, []);
 
     return (
-        <div className="category-list">
+        <div className="HighlightedProductSectionCard">
             {categories.slice(0, 4).map((category) => (
-                <Link to={`/category/${category.name}`} key={category.name}>
+                <Link to={`/productsbycategory/${category.id}`} key={category.id}>
                     <SimpleCard
-                    className={"simpleCardDefaut"}
+                        className={"simpleCardDefaut"}
                         image={category.image}
                         title={category.name}
                     />

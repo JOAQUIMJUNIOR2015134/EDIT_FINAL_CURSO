@@ -11,6 +11,7 @@ import NotFound from './Pages/NotFound.jsx'
 import NavBar from './Compoments/NavBar.jsx'
 import Footer from './Compoments/Footer.jsx'
 import ProductDet from './Pages/DetPage.jsx' 
+import ProductsbyCategory from './Pages/ProductsbyCategory.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
         <Route path="/detpage/:id" element={<ProductDet />} />
+  <Route path="/productsbycategory/:categoryId" element={<ProductsbyCategory />} />
         <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
